@@ -1,5 +1,5 @@
 public class InsertionSort {
-    public static int[] insertion_sort(int[] input_array) {
+    public static void insertion_sort(int[] input_array) {
         for(int i = 1; i < input_array.length; i++) {
             int j = i;
 
@@ -11,7 +11,5 @@ public class InsertionSort {
                 j--;
             }
         }
-
-        return input_array;
     }
 }
