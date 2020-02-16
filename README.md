@@ -1,2 +1,3 @@
-# Introduction to Algorithms - Thomas Cormen, Charles Leiserson, Ronald Rivest, Cliffors Stein
-Java implementation of all the algorithms covered in the book.
+# Thomas Cormen, Charles Leiserson, Ronald Rivest, Cliffors Stein: Introduction to Algorithms
+
+Java implementation of all the algorithms taught in the book.
