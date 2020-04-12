@@ -5,13 +5,13 @@ Chapter 2: Getting Started
 
 public class InsertionSort {
     void insertionSort(final int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            int j = i;
+        for (int startingIndex = 1; startingIndex < array.length; startingIndex++) {
+            int currentIndex = startingIndex;
 
-            while (j > 0 && array[j - 1] > array[j]) {
-                int swapValue = array[j - 1];
-                array[j - 1] = array[j];
-                array[j--] = swapValue;
+            while (currentIndex > 0 && array[currentIndex - 1] > array[currentIndex]) {
+                int swapValue = array[currentIndex - 1];
+                array[currentIndex - 1] = array[currentIndex];
+                array[currentIndex--] = swapValue;
             }
         }
     }
