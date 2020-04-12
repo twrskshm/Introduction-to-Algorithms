@@ -5,8 +5,8 @@ Chapter 2: Getting Started
 
 public class InsertionSort {
     void insertionSort(final int[] array) {
-        for (int startingIndex = 1; startingIndex < array.length; startingIndex++) {
-            int currentIndex = startingIndex;
+        for (int iterator = 1; iterator < array.length; iterator++) {
+            int currentIndex = iterator;
 
             while (currentIndex > 0 && array[currentIndex - 1] > array[currentIndex]) {
                 int swapValue = array[currentIndex - 1];
