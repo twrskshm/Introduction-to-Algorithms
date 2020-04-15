@@ -31,4 +31,19 @@ public class BinarySearch {
     }
 
     // Using recursion.
+    int binarySearch(final int[] array, final int startIndex, final int endIndex, final int target) {
+        if (startIndex <= endIndex) {
+            int middleIndex = (startIndex + endIndex) / 2;
+
+            if (array[middleIndex] == target)
+                return middleIndex;
+
+            if (array[middleIndex] < target)
+                return binarySearch(array, middleIndex + 1, endIndex, target);
+            else
+                return binarySearch(array, startIndex, middleIndex - 1, target);
+        }
+
+        return -1;
+    }
 }
