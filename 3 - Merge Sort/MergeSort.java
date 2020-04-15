@@ -1,9 +1,17 @@
 /*
 Chapter 2: Getting Started
 2.3 Merge sort
+
+Time complexities:
+Worst case: O(n * lg(n))
+Best case: O(n * lg(n))
+
+Space complexity:
+O(n)
 */
 
 public class MergeSort {
+    // Using recursion.
     void mergeSort(final int[] array, final int startIndex, final int endIndex) {
         if (startIndex < endIndex) {
             int middleIndex = (startIndex + endIndex) / 2;

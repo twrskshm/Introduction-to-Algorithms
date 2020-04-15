@@ -2,8 +2,12 @@
 Chapter 2: Getting Started
 2.2 Selection sort
 
+Time complexities:
 Worst case: O(n^2)
 Best case: O(n^2)
+
+Space complexity:
+O(1)
 */
 
 public class SelectionSort {

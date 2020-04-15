@@ -2,8 +2,12 @@
 Chapter 2: Getting Started
 2.1 Insertion sort
 
+Time complexities:
 Worst case: O(n^2)
 Best case: O(n)
+
+Space complexity:
+O(1)
 */
 
 public class InsertionSort {
