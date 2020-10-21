@@ -1,42 +1,33 @@
-/*
-Chapter 2: Getting Started
-2.1 Insertion sort
-
-Time complexities:
-Worst case: O(n^2)
-Best case: O(n)
-
-Space complexity:
-O(1)
-*/
+/**
+ * Chapter 2: Getting Started
+ *
+ * Insertion sort
+ *
+ * Time complexity:
+ * Worst case: Θ(n^2)
+ * Best case: Θ(n)
+ *
+ * Space complexity:
+ * Worst case: Θ(1)
+ * Best case: Θ(1)
+ *
+ * @author Saksham Tiwari
+ */
 
 public class InsertionSort {
-    // Using iteration.
+    /**
+     * Function that sorts an integer array into non-decreasing order.
+     * @param array the array we need to sort.
+     */
     void insertionSort(final int[] array) {
         for (int iterator = 1; iterator < array.length; iterator++) {
-            int currentIndex = iterator;
+            int index = iterator;
 
-            while (currentIndex > 0 && array[currentIndex - 1] > array[currentIndex]) {
-                int swapValue = array[currentIndex - 1];
-                array[currentIndex - 1] = array[currentIndex];
-                array[currentIndex--] = swapValue;
+            while (index > 0 && array[index - 1] > array[index]) {
+                int swapValue = array[index - 1];
+                array[index - 1] = array[index];
+                array[index--] = swapValue;
             }
-        }
-    }
-
-    // Using recursion.
-    void insertionSort(final int[] array, final int index) {
-        if (index > 0) {
-            insertionSort(array, index - 1);
-            insertElement(array, index);
-        }
-    }
-
-    void insertElement(final int[] array, int index) {
-        while (index > 0 && array[index - 1] > array[index]) {
-            int swapValue = array[index - 1];
-            array[index - 1] = array[index];
-            array[index--] = swapValue;
         }
     }
 }
