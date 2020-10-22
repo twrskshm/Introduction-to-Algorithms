@@ -28,7 +28,6 @@ public class LinearSearch {
             }
         }
 
-        // Returns -1 since the value we were looking for was not found.
         return -1;
     }
 }
